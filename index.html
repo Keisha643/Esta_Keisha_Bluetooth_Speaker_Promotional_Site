@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>26Audio Bluetooth Speaker Promotional Page</title>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/grid.css" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet"/>
@@ -11,40 +11,54 @@
 <body>
     <div class="grid-con center-grid-con">
         <section class="col-span-full">
-            <model-viewer src="26_bluetooth_speaker_model.gltf" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="415.3deg 68.55deg 10.12m" field-of-view="30deg">
+            <model-viewer src="model/26_bluetooth_speaker_model.gltf" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="1" camera-orbit="415.3deg 68.55deg 10.12m" field-of-view="30deg">
+
     <button class="Hotspot" slot="hotspot-2" data-position="-0.6429844297033207m 0.9117812588810921m 1.831189375403821m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-        <div class="HotspotAnnotation">USB-C Charger
-            Provide power to the speaker's built-in battery, allowing it to charge and operate.</div>
+        <div class="HotspotAnnotation" id="hotspot-2">
+            <h2></h2>USB-C Charger
+            <p>Provide power to the speaker's built-in battery, allowing it to charge and operate.</p>
+        </div>
+
     </button><button class="Hotspot" slot="hotspot-3" data-position="0.0047902846163845325m 0.9823515416757704m 0.9739249781689807m" data-normal="0.011633815377971738m 0.9994681288958299m -0.030464957922508244m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation" id="hotspot-3">
+            <h2>Power On/Off Button</h2>
+            <p>Turns the speaker on or off.</p>
+        </div>
 
-        <div class="HotspotAnnotation">Power On/Off Button
-            Turns the speaker on or off.</div>
     </button><button class="Hotspot" slot="hotspot-4" data-position="-0.022125940189718474m 0.98405076132787m 0.3298646723734957m" data-normal="-0.012296362859143734m 0.999917404585225m -0.003739447550630413m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation" id="hotspot-4">
+            <h2>Volume Up/Down Buttons</h2>
+            <p>Increases and decreases the audio.</p>
+        </div>
 
-        <div class="HotspotAnnotation">Volume Up/Down Buttons
-            Increases and decreases the audio.</div>
     </button><button class="Hotspot" slot="hotspot-5" data-position="0.004107410955983354m 0.9885824510525233m -0.7359372968007325m" data-normal="0.011908713001110783m 0.9996730596062038m -0.02262645469861615m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation" id="hotspot-5">
+            <h2>Play/Pause Button</h2>
+            <p>Controls audio playback.</p>
+        </div>
 
-        <div class="HotspotAnnotation">Play/Pause Button
-            Controls audio playback.</div>
     </button><button class="Hotspot" slot="hotspot-6" data-position="0.6989082707210237m -0.06445367906114308m -0.6376553151534586m" data-normal="0.999706784041674m -0.0037805664484202284m 0.02391763488271594m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation" id="hotspot-6">
+            <h2>Speaker Woofer</h2>
+            <p>Reproduce low-frequency sounds (bass).</p>
+            </div>
 
-        <div class="HotspotAnnotation">Speaker Woofer
-            Reproduce low-frequency sounds (bass).</div>
     </button><button class="Hotspot" slot="hotspot-7" data-position="0.9529237749785899m -0.06760682215178326m 0.5595672192254669m" data-normal="0.999663884628487m -0.018468208685055026m -0.01819458813626591m" data-visibility-attribute="visible">
-        
-        <div class="HotspotAnnotation">Speaker Tweeter
-            Responsible for high-frequency sounds (crisp highs).</div>
+        <div class="HotspotAnnotation" id="hotspot-7">
+            <h2>Speaker Tweeter</h2>
+            <p>Responsible for high-frequency sounds (crisp highs).</p>
+        </div>
+
     </button>
     <div class="progress-bar hide" slot="progress-bar">
         <div class="update-bar"></div>
     </div>
-    <!-- <button slot="ar-button" id="ar-button">
+    <button slot="ar-button" id="ar-button">
         View in your space
-    </button> -->
-    <!-- <div id="ar-prompt">
+    </button>
+    <div id="ar-prompt">
         <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-    </div> -->
+    </div>
 </model-viewer>
         </section>
     </div>
