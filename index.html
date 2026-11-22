@@ -9,10 +9,11 @@
 </head>
 
 <body>
-    <!-- NAVIGATION -->
-    <header class="grid-con">
+    <!-- HEADER -->
+    <div class="grid-con">
+        <header class="coll-span-full" id="main-header">
         <nav class="navbar">
-            <h1 class="logo">26Audio</h1>
+            <img src="images/26Audio-Logo-White-Line-01.webp">
 
             <ul>
                 <li><a href="#overview">Overview</a></li>
@@ -22,6 +23,8 @@
             </ul>
         </nav>
     </header>
+    </div>
+
 
     <!-- HERO SECTION -->
     <section class="hero" id="overview">
@@ -42,25 +45,22 @@
 
     </section>
 
+
     <!-- PRODUCT INTRO -->
     <section class="intro">
-
         <h2>Designed for Every Moment</h2>
-
         <p>
             Whether you're relaxing at home, studying,
             hosting friends, or heading outdoors,
             the 26Audio speaker delivers immersive sound
             wherever you go.
         </p>
-
     </section>
+
 
     <!-- 3D MODEL SECTION -->
     <section id="viewer">
-
         <h2>Interactive 3D Viewer</h2>
-
         <div class="grid-con center-grid-con">
 
             <section class="col-span-full">
@@ -69,43 +69,31 @@
     <!-- HOTSPOT 1 -->
     <button class="Hotspot" slot="hotspot-2" data-position="-0.6429844297033207m 0.9117812588810921m 1.831189375403821m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
         <div class="HotspotAnnotation" id="hotspot-2">
-            <h2></h2>USB-C Charger
-            <p>Provide power to the speaker's built-in battery, allowing it to charge and operate.</p>
         </div>
 
     <!-- HOTSPOT 2 -->
     </button><button class="Hotspot" slot="hotspot-3" data-position="0.0047902846163845325m 0.9823515416757704m 0.9739249781689807m" data-normal="0.011633815377971738m 0.9994681288958299m -0.030464957922508244m" data-visibility-attribute="visible">
         <div class="HotspotAnnotation" id="hotspot-3">
-            <h2>Power Control</h2>
-            <p>Quickly power the speaker On or Off.</p>
         </div>
 
     <!-- HOTSPOT 3 -->
     </button><button class="Hotspot" slot="hotspot-4" data-position="-0.022125940189718474m 0.98405076132787m 0.3298646723734957m" data-normal="-0.012296362859143734m 0.999917404585225m -0.003739447550630413m" data-visibility-attribute="visible">
         <div class="HotspotAnnotation" id="hotspot-4">
-            <h2>Volume Controls</h2>
-            <p>Easily adjust your audio levels.</p>
         </div>
 
     <!-- HOTSPOT 4 -->
     </button><button class="Hotspot" slot="hotspot-5" data-position="0.004107410955983354m 0.9885824510525233m -0.7359372968007325m" data-normal="0.011908713001110783m 0.9996730596062038m -0.02262645469861615m" data-visibility-attribute="visible">
         <div class="HotspotAnnotation" id="hotspot-5">
-            <h2>Play & Pause</h2>
-            <p>Convenient playback controls at your fingertips.</p>
         </div>
 
     <!-- HOTSPOT 5 -->
     </button><button class="Hotspot" slot="hotspot-6" data-position="0.6989082707210237m -0.06445367906114308m -0.6376553151534586m" data-normal="0.999706784041674m -0.0037805664484202284m 0.02391763488271594m" data-visibility-attribute="visible">
         <div class="HotspotAnnotation" id="hotspot-6">
-            <h2>Premium Woofer</h2>
-            <p>Deep bass performance that brings every track to life.</p>
             </div>
 
     <!-- HOTSPOT 6 -->
     </button><button class="Hotspot" slot="hotspot-7" data-position="0.9529237749785899m -0.06760682215178326m 0.5595672192254669m" data-normal="0.999663884628487m -0.018468208685055026m -0.01819458813626591m" data-visibility-attribute="visible">
         <div class="HotspotAnnotation" id="hotspot-7">
-            <h2>Precision Tweeter</h2>
-            <p>Delivers crisp highs and detailed audio clarity.</p>
         </div>
     </button>
 
@@ -121,6 +109,51 @@
             </section>
         </div>
     </section>
+
+
+    <!-- X-RAY SECTION -->
+    <section id="xray" class="xray-section">
+        <div class="grid-con">
+            <div class="col-span-full">
+                <h2>Explore What's Inside</h2>
+                <p>
+                    Drag the slider to reveal the premium components powering immersive 26Audio sound.
+                </p>
+            </div>
+
+            <div class="col-span-full">
+                <div class="image-comparison">
+
+                    <!-- X-RAY IMAGE -->
+                    <img
+                        src="images/26Audio_X-RAY_img01.jpg"
+                        alt="Speaker X-ray View"
+                        class="img-after">
+
+                    <!-- NORMAL IMAGE -->
+                    <div class="img-before-wrapper">
+                        <img
+                            src="images/26Audio_img02.jpg"
+                            alt="Speaker Exterior"
+                            class="img-before">
+                    </div>
+
+                    <!-- SLIDER -->
+                    <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="50"
+                        class="comparison-slider"
+                        id="comparisonSlider">
+
+                    <!-- DIVIDER LINE -->
+                    <div class="slider-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- FEATURES -->
     <section id="features" class="features">
@@ -153,6 +186,7 @@
 
     </section>
 
+    
     <!-- TECH SPECS -->
     <section id="specs" class="specs">
 
@@ -170,6 +204,7 @@
 
     </section>
 
+
     <!-- CTA -->
     <section class="cta">
 
@@ -185,6 +220,7 @@
 
     </section>
 
+
     <!-- FOOTER -->
     <footer>
 
@@ -194,8 +230,8 @@
 
     </footer>
 
-
-    <!-- Loads <model-viewer> for browsers: -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script>
     <script src="js/main.js"></script>
 </body>
