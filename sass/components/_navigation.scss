@@ -1,16 +1,12 @@
 .navbar {
     position: sticky;
     top: 0;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 1.2rem 5vw;
-
     background: rgba(0,0,0,.8);
     backdrop-filter: blur(10px);
-
     z-index: 100;
 
     .logo {
@@ -27,9 +23,7 @@
     a {
         color: white;
         text-decoration: none;
-
         transition: $transition;
-
         &:hover {
             color: $accent;
         }
