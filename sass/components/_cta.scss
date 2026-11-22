@@ -1,0 +1,22 @@
+.cta {
+
+    @include section-padding;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #0f0f0f,
+            #1a1a1a
+        );
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: $text-muted;
+        margin-bottom: 2rem;
+    }
+}
