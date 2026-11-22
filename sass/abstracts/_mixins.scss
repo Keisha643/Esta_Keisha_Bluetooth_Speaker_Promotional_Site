@@ -27,3 +27,13 @@
       display: flex;
       justify-content: center;
 }
+
+@mixin section-padding {
+    padding: 6rem 2rem;
+}
+
+@mixin card {
+    background: $bg-card;
+    border-radius: $radius;
+    padding: 2rem;
+}

@@ -10,28 +10,28 @@
       image: 'images/charger-svgrepo-com.svg'
     },
     {
-      title: 'Power On/Off Button',
-      text: 'Turns the speaker on or off.',
+      title: 'Power Control',
+      text: 'Quickly power the speaker On or Off.',
       image: 'images/power-button-svgrepo-com.svg'
     },
     {
-      title: 'Volume Up/Down Buttons',
-      text: 'Increases and decreases the audio.',
+      title: 'Volume Controls',
+      text: 'Easily adjust your audio levels.',
       image: 'images/sound-loud-filled-svgrepo-com.svg'
     },
     {
-      title: 'PLay/Pause Button',
-      text: 'Controls audio playback.',
+      title: 'Play & Pause',
+      text: 'Convenient playback controls at your fingertips.',
       image: 'images/play-pause-svgrepo-com.svg'
     },
     {
-      title: 'Speaker Woofer',
-      text: 'Reproduce low-frequency sounds (bass).',
+      title: 'Premium Woofer',
+      text: 'Deep bass performance that brings every track to life.',
       image: 'images/woofer-svgrepo-com.svg'
     },
     {
-      title: 'Speaker Tweeter',
-      text: 'Responsible for high-frequency sounds (crisp highs).',
+      title: 'Precision Tweeter',
+      text: 'Delivers crisp highs and detailed audio clarity.',
       image: 'images/tweeter-svgrepo-com.svg'
     },
   ]
