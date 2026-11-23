@@ -1,0 +1,78 @@
+.Hotspot {
+
+    background:
+        url("../images/sound-lines-svgrepo.svg")
+        center
+        no-repeat;
+
+    border: none;
+
+    width: 45px;
+    height: 39px;
+
+    cursor: pointer;
+
+    transition: $transition;
+
+    &:hover {
+
+        transform: scale(1.15);
+    }
+
+    &:not([data-visible]) {
+
+        opacity: 0;
+
+        pointer-events: none;
+    }
+
+    .HotspotAnnotation {
+
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &:hover .HotspotAnnotation {
+
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* HOTSPOT TOOLTIP */
+
+.HotspotAnnotation {
+
+    background: $secondary;
+
+    border-radius: 20px;
+
+    position: absolute;
+
+    padding: 1.5rem;
+
+    max-width: 300px;
+
+    left: calc(100% + 1rem);
+
+    top: -100%;
+
+    transition: $transition;
+
+    h2 {
+        color: white;
+    }
+
+    p {
+        color: $text-grey;
+    }
+
+    img {
+
+        width: 100px;
+
+        display: block;
+
+        margin-bottom: 1rem;
+    }
+}

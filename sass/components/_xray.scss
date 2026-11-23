@@ -1,14 +1,50 @@
-.xray-section {
-    padding: 8rem 0;
-    text-align: center;
+.image-comparison {
 
-    h2 {
-        margin-bottom: 1rem;
-    }
+    position: relative;
 
-    p {
-        max-width: 700px;
-        margin: 0 auto 4rem;
-    }
+    overflow: hidden;
+
+    border-radius: 20px;
 }
 
+.img-before-wrapper {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 50%;
+
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.comparison-slider {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    opacity: 0;
+
+    cursor: ew-resize;
+}
+
+.slider-line {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 50%;
+
+    height: 100%;
+
+    width: 4px;
+
+    background: white;
+}

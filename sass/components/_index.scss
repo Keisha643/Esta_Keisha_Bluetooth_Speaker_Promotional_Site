@@ -1,8 +1,7 @@
-// Import variables from the main variables partial
-@forward 'ar-model';
-@forward 'intro';
-@forward 'hero';
-@forward 'navigation';
-@forward 'button';
-@forward 'feature';
-@forward 'footer';
+@use "../abstracts/variables" as *;
+
+@forward 'buttons';
+@forward 'features';
+@forward 'hotspots';
+@forward 'viewer';
+@forward 'xray';

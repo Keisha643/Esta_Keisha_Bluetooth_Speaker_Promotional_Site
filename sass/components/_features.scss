@@ -1,0 +1,16 @@
+.feature-card {
+
+    background: $secondary;
+
+    padding: 2rem;
+
+    border-radius: $radius;
+
+    transition: $transition;
+
+    &:hover {
+
+        transform: translateY(-10px);
+
+    }
+}
