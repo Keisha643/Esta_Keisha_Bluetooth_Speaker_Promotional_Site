@@ -3,37 +3,74 @@
 //flex box mixins
 
 @mixin flex-column {
+      
       display: flex;
+
       flex-direction: column;
+
 }
     
 @mixin flex-center {
+
       display: flex;
+
       align-items: center;
+
       justify-content: center;
+
 }
     
 @mixin flex-center-column {
+
       @include flex-center;
+
       flex-direction: column;
+
 }
     
 @mixin flex-center-vert {
+
       display: flex;
+
       align-items: center;
+
 }
     
 @mixin flex-center-horiz {
+
       display: flex;
+
       justify-content: center;
+
 }
 
 @mixin section-padding {
+
     padding: 6rem 2rem;
+
 }
 
 @mixin card {
+
     background: $bg-card;
+
     border-radius: $radius;
+
     padding: 2rem;
+
+}
+
+@mixin glass {
+    backdrop-filter: blur(20px);
+
+    background: rgba(255,255,255,.05);
+
+    border: 1px solid rgba(255,255,255,.1);
+
+}
+
+@mixin section-spacing {
+
+    padding: 8rem 0;
+
 }

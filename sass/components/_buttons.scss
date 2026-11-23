@@ -1,16 +1,27 @@
 .btn,
 .buy-btn {
+
     display: inline-block;
-    background: $accent;
+
+    padding: 1rem 2rem;
+
+    background: $primary;
+
     color: white;
-    padding: 1rem 2.5rem;
-    border-radius: 100px;
-    text-decoration: none;
+
     border: none;
-    cursor: pointer;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
     transition: $transition;
+
+    cursor: pointer;
+
     &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 20px rgba(139, 190, 178);
+
+        transform: translateY(-5px);
+
     }
 }

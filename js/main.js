@@ -3,10 +3,18 @@
 
 
     // GSAP
+    gsap.registerPlugin(ScrollTrigger);
+
       gsap.from(".hero-content", {
-    y: 50,
     opacity: 0,
+    y: 100,
     duration: 1.5
+});
+
+      gsap.from("#viewer", {
+    opacity: 0,
+    scale: 0.8,
+    duration: 1
 });
 
       gsap.to(".Hotspot", {
@@ -21,7 +29,7 @@
       gsap.fromTo(
         ".img-before-wrapper",
         {
-            width: "0%"
+            width: "100%"
         },
         {
             width: "50%",
@@ -44,8 +52,6 @@
             start: "top 70%"
         }
     });
-
-
 
 
     // Variables

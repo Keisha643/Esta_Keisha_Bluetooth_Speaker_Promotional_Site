@@ -1,6 +1,21 @@
 footer {
+
+    background: #8bbeb2;
+
+    padding: 3rem 2rem;
+
     text-align: center;
-    padding: 2rem;
-    border-top: 1px solid rgba(255,255,255,.05);
-    color: $text-muted;
+
+    border-top: 1px solid rgba(255,255,255,.1);
+
+    p {
+
+        color: #0d0630;
+
+        font-size: 0.9rem;
+
+        letter-spacing: 1px;
+
+        margin: 0;
+    }
 }
